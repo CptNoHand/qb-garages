@@ -1,6 +1,6 @@
 AutoRespawn = false --True == auto respawn cars that are outside into your garage on script restart, false == does not put them into your garage and players have to go to the impound
 SharedGarages = false   --True == Gang and job garages are shared, false == Gang and Job garages are personal
-VisuallyDamageCars = true --True == Visually damage cars that go out of the garage depending of body damage, false == Do not visually damage cars (damage is still applied to car values)
+VisuallyDamageCars = false --True == Visually damage cars that go out of the garage depending of body damage, false == Do not visually damage cars (damage is still applied to car values)
 
 Garages = {
     ["motelgarage"] = {
@@ -149,7 +149,7 @@ Garages = {
     ["pillboxgarage"] = {
         label = "Pillbox Garage Parking",
         takeVehicle = vector3(215.9499, -809.698, 30.731),
-        spawnPoint = vector4(234.1942, -787.066, 30.193, 159.6),
+        spawnPoint = vector4(223.19, -801.82, 30.66, 242.56),
         putVehicle = vector3(218.0894, -781.370, 30.389),
         showBlip = true,
         blipName = "Public Parking",
@@ -227,15 +227,75 @@ Garages = {
     },
     ["police"] = {
         label = "Police",
-        takeVehicle = vector3(454.6, -1017.4, 28.4),
-        spawnPoint = vector4(438.4, -1018.3, 27.7, 90.0),
-        putVehicle = vector3(452.88, -1006.98, 27.5),
+        takeVehicle = vector3(460.01, -986.61, 25.7),
+        spawnPoint = vector4(450.22, -976.26, 25.7, 92.08),
+        putVehicle = vector3(458.34, -992.35, 25.7),
         showBlip = false,
         blipName = "Police",
         blipNumber = 357,
         type = 'job',                --public, job, gang, depot
         vehicle = 'car',              --car, air, sea
         job = "police"
+    },
+    ["police2"] = {
+        label = "Police2",
+        takeVehicle = vector3(1820.49, 3680.94, 33.97),
+        spawnPoint = vector4(1820.38, 3688.74, 33.97, 295.07),
+        putVehicle = vector3(1820.38, 3688.74, 33.97),
+        showBlip = false,
+        blipName = "Police",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "police"
+    },
+    ["ottos"] = {
+        label = "Ottos",
+        takeVehicle = vector3(824.21, -800.46, 26.23),
+        spawnPoint = vector4(826.47, -793.19, 26.21, 79.34),
+        putVehicle = vector3(826.47, -793.19, 26.21),
+        showBlip = false,
+        blipName = "Ottos",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "ottos"
+    },
+    ["redline"] = {
+        label = "Redline",
+        takeVehicle = vector3(-556.39, -895.48, 24.59),
+        spawnPoint = vector4(-560.01, -890.92, 25.0, 267.83),
+        putVehicle = vector3(-560.01, -890.92, 25.0),
+        showBlip = false,
+        blipName = "Redline",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "redline"
+    },
+    ["redline2"] = {
+        label = "Redline2",
+        takeVehicle = vector3(-541.36, -887.27, 25.16),
+        spawnPoint = vector4(-543.76, -892.65, 24.65, 179.77),
+        putVehicle = vector3(-543.76, -892.63, 24.65),
+        showBlip = false,
+        blipName = "Redline2",
+        blipNumber = 357,
+        type = 'puplic',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "redline"
+    },
+    ["lscustoms"] = {
+        label = "Los Santos Customs",
+        takeVehicle = vector3(-396.34, -117.13, 38.65),
+        spawnPoint = vector4(-391.95, -118.58, 38.54, 291.48),
+        putVehicle = vector3(-392.46, -118.91, 38.54),
+        showBlip = false,
+        blipName = "LSC",
+        blipNumber = 357,
+        type = 'job',                --public, job, gang, depot
+        vehicle = 'car',              --car, air, sea
+        job = "lscustoms"
     },
     ["intairport"] = {
         label = "Airport Hangar",
