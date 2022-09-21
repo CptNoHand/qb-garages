@@ -50,6 +50,7 @@ local Translations = {
         car_e = "E - Garage",
         sea_e = "E - Boathouse",
         air_e = "E - Hangar",
+        depot_e = "E - Depot",
         park_e = "E - Store Vehicle",
         house_garage = "House garage",
     }
