@@ -96,7 +96,7 @@ QBCore.Functions.CreateCallback("qb-garage:server:checkOwnership", function(sour
     elseif type == "house" then     --House garages only for player cars that have keys of the house
         MySQL.query('SELECT * FROM player_vehicles WHERE plate = ?', {plate}, function(result)
             if result[1] then
-                local hasHouseKey = exports['ps-housing']:IsOwner(src, house)
+                local hasHouseKey = exports['qb-houses']:hasKey(result[1].license, result[1].citizenid, house)
                 if hasHouseKey then
                     cb(true)
                 else

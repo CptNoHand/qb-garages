@@ -471,10 +471,6 @@ RegisterNetEvent('qb-garages:client:addHouseGarage', function(house, garageInfo)
     HouseGarages[house] = garageInfo
 end)
 
-RegisterNetEvent('qb-garages:client:removeHouseGarage', function(house)
-    Config.HouseGarages[house] = nil
-end)
-
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     CreateBlipsZones()
 end)
